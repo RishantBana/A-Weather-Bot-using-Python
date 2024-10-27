@@ -1,0 +1,35 @@
+import requests
+import smtplib 
+from bs4 import BeautifulSoup
+import schedule
+def send_weather_email():
+    city="Greater Noida"
+    url = f"https://www.google.com/search?q=weather+{city}"
+    html= requests.get(url).content
+
+    soup = BeautifulSoup(html,'html.parser')
+
+    temperature = soup.find('div', attrs={'class': 'BNeawe iBp4i AP7Wnd'}).text
+    time_sky = soup.find('div', attrs={'class': 'BNeawe tAd8D AP7Wnd'}).text
+    
+    sky = time_sky.split('\n')[1]
+    subject = "Today's Weather Update"
+    body = f"Good morning! The weather in {city} is currently {sky} with a temperature of {temperature}."
+    
+    if sky in ["Rainy", "Rain And Snow", "Showers", "Haze", "Cloudy"]:
+        body += "\nDon't forget to bring an umbrella today!"
+    
+    msg = f"Subject:{subject}\n\n{body}\n\nBest regards,\nWeather Reminder Bot".encode('utf-8')
+    
+    smtp_object = smtplib.SMTP('smtp.gmail.com', 587)
+    smtp_object.starttls()  
+    smtp_object.login("EMAIL FROM", "APP PASSWORD")
+    smtp_object.sendmail("EMAIL FROM", "EMAIL TO", msg)
+    smtp_object.quit()
+    
+    print("Weather Email Sent!")
+
+schedule.every().day.at("22:04").do(send_weather_email)
+
+while True:
+    schedule.run_pending()
