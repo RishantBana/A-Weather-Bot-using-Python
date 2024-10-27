@@ -42,6 +42,15 @@ A Python script that emails daily weather details for a specified city and remin
 
 ---
 
+## 🖥️ Output
+Terminal output when successful.
+![Output](images/output.png)
+
+Email that you receive when successful.
+![Output](images/email screenshot.png)
+
+---
+
 ## ⚙️ Customization
 
 - **🌆 Change the City**:
