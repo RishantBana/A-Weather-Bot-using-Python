@@ -52,7 +52,7 @@ When the script runs successfully, you’ll see a terminal output like this:
 ## ✉️ Email Notification
 
 Here’s an example of the email you’ll receive:
-![Email Screenshot](images/email_screenshot.png)
+![Email Screenshot](images/screenshot.png)
 
 ---
 
