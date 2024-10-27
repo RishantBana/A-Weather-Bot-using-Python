@@ -42,12 +42,17 @@ A Python script that emails daily weather details for a specified city and remin
 
 ---
 
-## 🖥️ Output
-Terminal output when successful.
-![Output](images/output.png)
+## 📤 Terminal Output on Success
 
-Email that you receive when successful.
-![Output](images/email screenshot.png)
+When the script runs successfully, you’ll see a terminal output like this:
+![Terminal Output](images/output.png)
+
+---
+
+## ✉️ Email Notification
+
+Here’s an example of the email you’ll receive:
+![Email Screenshot](images/email_screenshot.png)
 
 ---
 
