@@ -68,7 +68,7 @@ This project was inspired by the need for quick and easy daily weather updates. 
 - The developers and maintainers of **BeautifulSoup** and **Requests**, for making web scraping in Python efficient and user-friendly.
 - The creators of **Schedule**, for simplifying task scheduling in Python.
 - The open-source community, for their continuous support, resources, and contributions.
-- And lastly @vinayedula from GEEKFORGEEK for a [step by step](https://www.geeksforgeeks.org/user/vinayedula/contributions/?itm_source=geeksforgeeks&itm_medium=article_author&itm_campaign=auth_user) guide.
+- And lastly @vinayedula from GEEKSFORGEEKS for a [step by step](https://www.geeksforgeeks.org/user/vinayedula/contributions/?itm_source=geeksforgeeks&itm_medium=article_author&itm_campaign=auth_user) guide.
 
 This project wouldn’t be possible without the support of these tools and the valuable resources available in the developer community.
 
